@@ -1,9 +1,12 @@
-<div class="row">
-  <h1><%= @member.name %></h1>
-  <h3>Member Website: <%= @member.website %></h3>
 
-  <h3>Website Headers<h4>
-  <div>
-    <%= @member.website_headers =%>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3"><%= @member.name %></h1>
+    <p class="lead"><%= @member.website %></p>
   </div>
+</div>
+<h3>Website Headers</h3>
+<div>
+  <%= @member.website_headers %>
 </div>
