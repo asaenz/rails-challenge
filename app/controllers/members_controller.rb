@@ -24,5 +24,4 @@ class MembersController < ApplicationController
     def member_params
       params.require(:member).permit(:name, :website)
     end
-
 end
