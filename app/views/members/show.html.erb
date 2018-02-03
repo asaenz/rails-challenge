@@ -1,12 +1,15 @@
-
-
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-3"><%= @member.name %></h1>
     <p class="lead"><%= @member.website %></p>
   </div>
 </div>
+<div class="row">
 <h3>Website Headers</h3>
-<div>
-  <%= @member.website_headers %>
+  <div>
+    <%= @member.website_headers %>
+  </div>
+</div>
+<div class="row">
+  <%= link_to "Add Friends", member_friendships_path(@member.id), :class => "btn btn-primary btn-sm" %>
 </div>

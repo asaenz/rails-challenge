@@ -1,0 +1,12 @@
+<% targets.each do |target| %>
+  <div id="friends_list" class="row">
+    <%= render target %>
+    <% if are_friends %>
+      <%= button_to 'Friends', {}, :disabled => true, :class => "btn btn-primary btn-sm" %>
+    <% else %>
+      <%= button_to 'Add Friend', 
+                    {:controller => "friendships", :action => "create", :member_id => requestor.id, :friend_id=> target.id}, 
+                    {:method=>:post, :class => "btn btn-primary btn-sm" } %>
+    <% end %>
+  </div>
+<% end %>

@@ -4,6 +4,9 @@ class Member < ApplicationRecord
   validates :name, presence: true
   validates :website, presence: true
 
+  has_many :friendships
+  has_many :friends, :through => :friendships
+
   before_save :scrape_for_headers
 
 

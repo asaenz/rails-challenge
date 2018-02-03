@@ -1,0 +1,3 @@
+<h1>Friends List</h1>
+<%= render partial: 'list', locals: { targets: @friends, are_friends: true, requestor: @member} %>
+<%= render partial: 'list', locals: { targets: @not_friends, are_friends: false, requestor: @member } %>

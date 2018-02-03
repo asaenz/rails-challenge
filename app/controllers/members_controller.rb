@@ -19,7 +19,7 @@ class MembersController < ApplicationController
       render 'new'
     end
   end
-
+  
   private
     def member_params
       params.require(:member).permit(:name, :website)
