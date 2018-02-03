@@ -1,5 +1,8 @@
 # EverlyWell Ruby Challenge
 
+Heroku Link: https://quiet-forest-67965.herokuapp.com/
+Github Link: https://github.com/asaenz/rails-challenge
+
 ### Overview
 
 Using Ruby on Rails, we'd like you to create a simple experts directory search tool. 
